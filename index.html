@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إلى حنان ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Great+Vibes&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;font-family:Cairo,Arial,sans-serif}
+body{
+  overflow-x:hidden;
+  color:#fff;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(255,110,150,.18),transparent 28%),
+    radial-gradient(circle at 80% 30%,rgba(255,40,90,.16),transparent 30%),
+    linear-gradient(135deg,#18020d,#3d071c 45%,#12020b);
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;
+  background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.04) 50%,transparent 65%);
+  animation:shine 7s infinite linear;
+}
+@keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+.screen{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:30px 18px;position:relative;overflow:hidden;
+}
+#intro{transition:opacity .8s,transform .8s}
+.intro-card{text-align:center;max-width:720px;z-index:2}
+.little{font-size:15px;letter-spacing:2px;color:#ffb8cc;margin-bottom:20px}
+.heart-logo{
+  width:88px;height:88px;margin:0 auto 25px;border-radius:50%;
+  display:grid;place-items:center;font-size:43px;
+  background:rgba(255,65,112,.12);border:1px solid rgba(255,160,185,.35);
+  box-shadow:0 0 45px rgba(255,50,100,.35);
+  animation:pulse 1.8s infinite;
+}
+@keyframes pulse{50%{transform:scale(1.08);box-shadow:0 0 70px rgba(255,50,100,.55)}}
+h1{font-size:clamp(34px,7vw,68px);margin-bottom:10px}
+.subtitle{font-size:clamp(16px,3vw,21px);color:#ffd9e3;margin-bottom:35px}
+button{
+  border:0;color:#fff;cursor:pointer;font-family:inherit;font-size:18px;font-weight:700;
+  padding:15px 34px;border-radius:50px;
+  background:linear-gradient(135deg,#ff2e68,#d80b49);
+  box-shadow:0 12px 35px rgba(255,25,85,.35);
+  transition:.25s;position:relative;overflow:hidden;
+}
+button:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 18px 45px rgba(255,25,85,.5)}
+button:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);transform:translateX(-100%);animation:btnshine 2.7s infinite}
+@keyframes btnshine{55%,100%{transform:translateX(100%)}}
+
+#letter{display:none;opacity:0;transform:translateY(25px)}
+.letter-wrap{width:min(850px,100%);z-index:2}
+.topline{text-align:center;color:#ffadc4;font-size:14px;margin-bottom:12px}
+.letter{
+  position:relative;padding:clamp(28px,5vw,55px);border-radius:26px;
+  background:linear-gradient(145deg,rgba(255,247,249,.98),rgba(255,225,234,.96));
+  color:#4b1025;border:2px solid rgba(255,110,145,.55);
+  box-shadow:0 25px 80px rgba(0,0,0,.35),0 0 45px rgba(255,45,100,.18);
+}
+.corner{position:absolute;color:#f32e65;font-size:28px}
+.c1{top:15px;right:20px}.c2{top:15px;left:20px}.c3{bottom:15px;right:20px}.c4{bottom:15px;left:20px}
+.letter h2{text-align:center;color:#d71950;font-size:34px;margin-bottom:25px}
+.letter p{font-size:clamp(16px,2.3vw,19px);line-height:2.15;margin:13px 0;text-align:center}
+.signature{text-align:center;margin-top:28px;font-weight:700;font-size:22px;color:#c20e45}
+.signature small{display:block;font-size:14px;font-weight:400;margin-top:5px;color:#8d3d58}
+.final{text-align:center;margin-top:28px;color:#ffc0d1;font-size:15px}
+
+.floating-heart{
+  position:fixed;bottom:-40px;left:0;font-size:20px;opacity:.8;pointer-events:none;
+  animation:floatUp linear forwards;z-index:1;
+}
+@keyframes floatUp{
+  0%{transform:translateY(0) rotate(0) scale(.8);opacity:0}
+  10%{opacity:.8}90%{opacity:.65}
+  100%{transform:translateY(-115vh) rotate(360deg) scale(1.5);opacity:0}
+}
+.sparkle{
+  position:fixed;width:4px;height:4px;background:#fff;border-radius:50%;opacity:.7;
+  animation:twinkle 2s infinite alternate;pointer-events:none;
+}
+@keyframes twinkle{to{transform:scale(2.5);opacity:.1}}
+
+.hidden{display:none!important}
+.fade-in{animation:fadeIn .9s forwards}
+@keyframes fadeIn{to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:600px){
+  .screen{padding:20px 14px}
+  .letter{padding:35px 20px}
+  .letter p{line-height:2}
+}
+</style>
+</head>
+<body>
+
+<section id="intro" class="screen">
+  <div class="intro-card">
+    <div class="little">من القلب... إلى القلب ❤️</div>
+    <div class="heart-logo">❤️</div>
+    <h1>حنان...</h1>
+    <div class="subtitle">لديكِ رسالة خاصة، كتبتها لكِ بكل حب.</div>
+    <button id="openBtn">اضغطي هنا ❤️</button>
+  </div>
+</section>
+
+<section id="letter" class="screen">
+  <div class="letter-wrap">
+    <div class="topline">رسالة لا تُكتب إلا لشخص واحد...</div>
+    <article class="letter">
+      <span class="corner c1">♡</span><span class="corner c2">♡</span>
+      <span class="corner c3">♡</span><span class="corner c4">♡</span>
+
+      <h2>إلى حنان ❤️</h2>
+
+      <p>أحيانًا أجد نفسي أبتسم دون سبب... ثم أتذكر أنكِ موجودة في حياتي.</p>
+
+      <p>أنتِ لستِ مجرد شخص أحبه، بل أنتِ أجمل ما في أيامي، والسبب في كثير من اللحظات التي تجعلني أبتسم من قلبي.</p>
+
+      <p>أحبكِ يا حنان بكل تفاصيلكِ؛ بابتسامتكِ، بصوتكِ، بطريقتكِ في التفكير، وحتى بعنادكِ أحيانًا... لأن كل ذلك جزء من الإنسانة التي أحبها.</p>
+
+      <p>معكِ أشعر أن الحياة أجمل، وأن الأشياء البسيطة يمكن أن تصبح ذكريات لا تُنسى.</p>
+
+      <p>لا أعدكِ بأن تكون كل الأيام مثالية، لكن أعدكِ أن أبقى بجانبكِ، وأن أحاول دائمًا أن أجعل وجودي في حياتكِ شيئًا جميلًا.</p>
+
+      <p>أنتِ بالنسبة لي أكثر من مجرد حبيبة... أنتِ شخص أتمنى أن أشاركه الضحكة، والحلم، واللحظة الجميلة، وحتى الأيام الصعبة.</p>
+
+      <p>وإذا كان للحب معنى عندي، فأنتِ واحدة من أجمل معانيه. ❤️</p>
+
+      <div class="signature">
+        من قلب المهدي ❤️
+        <small>إلى حنان... اليوم، وغدًا، وكل يوم.</small>
+      </div>
+    </article>
+    <div class="final">هذه ليست مجرد صفحة على الإنترنت... إنها طريقة صغيرة لأقول لكِ: أنتِ مهمة جدًا بالنسبة لي. 💕</div>
+  </div>
+</section>
+
+<script>
+const intro = document.getElementById("intro");
+const letter = document.getElementById("letter");
+const openBtn = document.getElementById("openBtn");
+
+function createHeart(){
+  const h=document.createElement("div");
+  h.className="floating-heart";
+  h.textContent=["❤️","💕","💗","💖","💓","♡"][Math.floor(Math.random()*6)];
+  h.style.left=Math.random()*100+"vw";
+  h.style.fontSize=(14+Math.random()*25)+"px";
+  h.style.animationDuration=(5+Math.random()*6)+"s";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),12000);
+}
+setInterval(createHeart,420);
+
+for(let i=0;i<30;i++){
+  const s=document.createElement("div");
+  s.className="sparkle";
+  s.style.left=Math.random()*100+"vw";
+  s.style.top=Math.random()*100+"vh";
+  s.style.animationDelay=(Math.random()*2)+"s";
+  document.body.appendChild(s);
+}
+
+openBtn.addEventListener("click",()=>{
+  intro.style.opacity="0";
+  intro.style.transform="scale(.96)";
+  setTimeout(()=>{
+    intro.classList.add("hidden");
+    letter.style.display="flex";
+    requestAnimationFrame(()=>letter.classList.add("fade-in"));
+    window.scrollTo({top:0,behavior:"smooth"});
+  },650);
+});
+</script>
+</body>
+</html>
